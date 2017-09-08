@@ -67,9 +67,4 @@ public class HomeController {
         }
     }
 	
-	@RequestMapping("/userFront")
-	public String userFront(Principal principal, Model model) {
-        User user = userService.findByUsername(principal.getName());
-        return "userFront";
-    }
 }
